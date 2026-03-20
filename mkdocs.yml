@@ -1,0 +1,46 @@
+site_name: Helix Documentation
+site_url: https://attunelabs.github.io/helix-docs
+site_description: Documentation for Helix — the open-source modular AI home assistant
+site_author: Attune Labs, Inc.
+
+repo_url: https://github.com/attunelabs/helix-os
+repo_name: attunelabs/helix-os
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: custom
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: custom
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Configuration: configuration.md
+  - Developer Guide: developer-guide.md
+  - Hardware Guide: hardware-guide.md
+  - FAQ: faq.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
